@@ -9,5 +9,6 @@
  * Consider organizing styles into separate files for maintainability.
  *
  *= require metis_css/main
+ *= require langind_page/style
 
  */

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo Clube de Palmas - Liderança, Experiência e Oportunidade</title>
+  <meta name="description" content="Leo Clube de Palmas - Desenvolvendo jovens líderes através do serviço comunitário. Junte-se a nós!">
+  <!--    <link rel="stylesheet" href="assets/css/style.css">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <%= stylesheet_link_tag "landing_page/style", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <%= image_tag "landing_page/JvqFPYRLvUnu.gif", alt: "Leo Clube Logo", class: "logo-img" %>
+        <span class="logo-text">Leo Clube Palmas</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+        <li><a href="#atividades" class="nav-link">Atividades</a></li>
+        <li><a href="#membros" class="nav-link">Membros</a></li>
+        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        <li><a href="#participar" class="nav-link">Como Participar</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <button class="cta-button">Participe</button>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-background"style="background: url('<%= asset_path("landing_page/exZ7GQTk1X4h.jpeg") %>') center/cover;">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">Transformando Jovens em Líderes</h1>
+    <p class="hero-subtitle">Junte-se ao Leo Clube de Palmas e faça a diferença na sua comunidade através da Liderança, Experiência e Oportunidade</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary">Conheça Nossos Projetos</button>
+      <button class="btn btn-secondary">Saiba Como Participar</button>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- LEO Pillars Section -->
+<section class="pillars">
+  <div class="container">
+    <h2 class="section-title">Os Pilares do LEO</h2>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <i class="fas fa-crown"></i>
+        </div>
+        <h3>Liderança</h3>
+        <p>Desenvolvemos habilidades de liderança através de projetos práticos e responsabilidades no clube.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h3>Experiência</h3>
+        <p>Proporcionamos experiências únicas em serviço comunitário e desenvolvimento pessoal.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <i class="fas fa-door-open"></i>
+        </div>
+        <h3>Oportunidade</h3>
+        <p>Criamos oportunidades para jovens fazerem a diferença e expandirem suas redes de contato.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="sobre" class="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="section-title">Sobre o Leo Clube de Palmas</h2>
+        <p>O Leo Clube de Palmas é parte do programa oficial do Lions Clubs International, dedicado a jovens de 12 a 30 anos que desejam fazer a diferença em sua comunidade.</p>
+        <p>Nosso clube promove atividades de serviço comunitário que desenvolvem qualidades individuais de Liderança, Experiência e Oportunidade, preparando jovens para serem líderes do futuro.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Membros Ativos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Projetos Realizados</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Anos de Atuação</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <%= image_tag "landing_page/exZ7GQTk1X4h.jpeg", alt: "Jovens do Leo Clube em ação" %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Activities Section -->
+<section id="atividades" class="activities">
+  <div class="container">
+    <h2 class="section-title">Nossas Atividades</h2>
+    <div class="activities-grid">
+      <div class="activity-card">
+        <div class="activity-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Ações Sociais</h3>
+        <p>Campanhas de arrecadação, doações e apoio a instituições de caridade da região.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3>Educação</h3>
+        <p>Projetos educacionais, palestras e workshops para desenvolvimento pessoal e profissional.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3>Meio Ambiente</h3>
+        <p>Ações de preservação ambiental, plantio de árvores e conscientização ecológica.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Eventos Comunitários</h3>
+        <p>Organização de eventos que promovem a integração e o bem-estar da comunidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Members Section -->
+<section id="membros" class="members">
+  <div class="container">
+    <h2 class="section-title">Nossos Membros</h2>
+    <p class="members-description">Conheça os jovens líderes que fazem a diferença no Leo Clube de Palmas</p>
+    <div class="members-grid">
+      <div class="member-card">
+        <div class="member-photo">
+          <%= image_tag "landing_page/sSkxTB8el0bF.jpg", alt: "Ana Silva" %>
+        </div>
+        <div class="member-info">
+          <h3>Ana Silva</h3>
+          <p class="member-position">Presidente</p>
+          <p class="member-description">Líder dedicada com foco em projetos sociais e desenvolvimento comunitário.</p>
+        </div>
+      </div>
+      <div class="member-card">
+        <div class="member-photo">
+          <%= image_tag "landing_page/nSOfOQyWRRTT.jpg", alt: "Carlos Santos" %>
+        </div>
+        <div class="member-info">
+          <h3>Carlos Santos</h3>
+          <p class="member-position">Vice-Presidente</p>
+          <p class="member-description">Especialista em gestão de projetos e coordenação de atividades.</p>
+        </div>
+      </div>
+      <div class="member-card">
+        <div class="member-photo">
+          <%= image_tag "landing_page/aNlMK1zkit6O.jpg", alt: "Maria Oliveira" %>
+        </div>
+        <div class="member-info">
+          <h3>Maria Oliveira</h3>
+          <p class="member-position">Secretária</p>
+          <p class="member-description">Responsável pela comunicação e organização dos eventos do clube.</p>
+        </div>
+      </div>
+      <div class="member-card">
+        <div class="member-photo">
+          <%= image_tag "landing_page/A1cXI5OT1Le6.jpg", alt: "João Costa" %>
+        </div>
+        <div class="member-info">
+          <h3>João Costa</h3>
+          <p class="member-position">Tesoureiro</p>
+          <p class="member-description">Gerencia os recursos financeiros e coordena campanhas de arrecadação.</p>
+        </div>
+      </div>
+      <div class="member-card">
+        <div class="member-photo">
+          <%= image_tag "landing_page/FJsyswUSLuXi.jpg", alt: "Beatriz Lima" %>
+        </div>
+        <div class="member-info">
+          <h3>Beatriz Lima</h3>
+          <p class="member-position">Coordenadora de Projetos</p>
+          <p class="member-description">Desenvolve e implementa projetos de impacto social na comunidade.</p>
+        </div>
+      </div>
+      <div class="member-card">
+        <div class="member-photo">
+          <%= image_tag "landing_page/1oJi8NJALX5P.jpg", alt: "Rafael Mendes" %>
+        </div>
+        <div class="member-info">
+          <h3>Rafael Mendes</h3>
+          <p class="member-position">Diretor de Marketing</p>
+          <p class="member-description">Responsável pela divulgação e comunicação das atividades do clube.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="galeria" class="gallery">
+  <div class="container">
+    <h2 class="section-title">Galeria de Momentos</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <%= image_tag "landing_page/A1cXI5OT1Le6.jpg", alt: "Atividade do Leo Clube" %>
+        <div class="gallery-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <%= image_tag "landing_page/FJsyswUSLuXi.jpg", alt: "Evento do Leo Clube" %>
+        <div class="gallery-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <%= image_tag "landing_page/1oJi8NJALX5P.jpg", alt: "Projeto Social" %>
+        <div class="gallery-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <%= image_tag "landing_page/CPRRxaDC3RTB.jpg", alt: "Reunião do Clube" %>
+        <div class="gallery-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Join Section -->
+<section id="participar" class="join">
+  <div class="container">
+    <div class="join-content">
+      <h2 class="section-title">Como Participar</h2>
+      <p class="join-description">Está pronto para fazer a diferença? Junte-se ao Leo Clube de Palmas e desenvolva suas habilidades de liderança enquanto serve sua comunidade.</p>
+      <div class="join-requirements">
+        <h3>Requisitos:</h3>
+        <ul>
+          <li>Ter entre 12 e 30 anos</li>
+          <li>Residir em Palmas ou região metropolitana</li>
+          <li>Ter disponibilidade para participar das atividades</li>
+          <li>Demonstrar interesse em servir a comunidade</li>
+        </ul>
+      </div>
+      <div class="join-process">
+        <h3>Processo de Adesão:</h3>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <p>Entre em contato conosco</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <p>Participe de uma reunião</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <p>Conheça nossos projetos</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <p>Torne-se um Leo!</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary">Quero Participar</button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contato" class="contact">
+  <div class="container">
+    <h2 class="section-title">Entre em Contato</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Localização</h3>
+            <p>Palmas, Tocantins, Brasil</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>E-mail</h3>
+            <p>contato@leoclubepalmas.org.br</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3>Telefone</h3>
+            <p>(63) 99999-9999</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3>Reuniões</h3>
+            <p>Quintas-feiras às 19h30</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Seu telefone">
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <%= image_tag "landing_page/JvqFPYRLvUnu.gif", alt: "Leo Clube Logo" %>
+          <span>Leo Clube Palmas</span>
+        </div>
+        <p>Desenvolvendo jovens líderes através do serviço comunitário.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#atividades">Atividades</a></li>
+          <li><a href="#membros">Membros</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> contato@leoclubepalmas.org.br</li>
+          <li><i class="fas fa-phone"></i> (63) 99999-9999</li>
+          <li><i class="fas fa-map-marker-alt"></i> Palmas, TO</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Leo Clube</h3>
+        <p>Parte do Lions Clubs International</p>
+        <p>Jovens de 12 a 30 anos</p>
+        <p>Liderança • Experiência • Oportunidade</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Leo Clube de Palmas. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
