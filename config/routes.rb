@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  # root "home#dashboard"
+  # Rotas do Devise para usuários (login, registro, etc)
+  # devise_for :
+  devise_for :users, skip: [:registrations], controllers: {
+    sessions: 'users/sessions',
+    passwords: 'users/passwords'
+  }
+  # Rota raiz do site, chama HomeController#landing_page
   root "home#landing_page"
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -11,6 +18,8 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  # Rotas agrupadas para HomeController
+  controller :home do
+    get :dashboard  # gera rota /dashboard para HomeController#dashboard
+  end
 end
